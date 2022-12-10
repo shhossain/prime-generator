@@ -1,2 +1,2 @@
-# prime-generator
-Generate primes
+# Generate Primes
+
