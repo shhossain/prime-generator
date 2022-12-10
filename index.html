@@ -1,0 +1,131 @@
+<!-- github page to generate prime numbers -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- primes.ico -->
+    <link rel="icon" href="primes.ico" type="image/x-icon" />
+
+    <title>Primes 1 to N</title>
+  </head>
+  <body>
+    <!-- show 1 to 100 ===other side===   total count=25-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="#" id="range">1 to 100</a>
+        </div>
+        <div id="total">25</div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <!-- start and end input -->
+      <div class="d-flex justify-content-center">
+        <div class="p-2">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="start"
+            value="1"
+            id="start"
+          />
+        </div>
+        <div class="p-2">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="end"
+            value="100"
+            id="end"
+          />
+        </div>
+        <div class="p-2">
+          <!-- sep -->
+          <input
+            type="text"
+            class="form-control"
+            placeholder="seperator"
+            value=", "
+            id="sep"
+          />
+        </div>
+        <div class="p-2">
+          <button type="button" class="btn btn-primary" id="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <!-- diffrent showing method : plain, list, array, json, ect -->
+      <div class="d-flex justify-content-between">
+        <div class="p-2">
+          <button type="button" class="btn btn-primary data">Plain</button>
+        </div>
+        <div class="p-2">
+          <button type="button" class="btn btn-outline-secondary data">
+            Line
+          </button>
+        </div>
+        <div class="p-2">
+          <button type="button" class="btn btn-outline-secondary data">
+            Array
+          </button>
+        </div>
+        <div class="p-2">
+          <button type="button" class="btn btn-outline-secondary data">
+            Json
+          </button>
+        </div>
+      </div>
+      <br />
+      <!-- codeblock showing result black with-->
+      <div class="d-flex justify-content-center">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              <div class="d-flex justify-content-end">
+                <!-- plain copy -->
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="copy"
+                  >
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </h5>
+            <div class="container">
+              <p class="card-text" id="result">
+                2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+                61, 67, 71, 73, 79, 83, 89, 97
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main.js -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
